@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fitness Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Fitness Tracker</h1>
+    <div class="date" id="dateDisplay"></div>
+
+    <div class="summary">
+      <h2>Today's Summary</h2>
+      <p>Steps: <span id="steps">0</span></p>
+      <p>Workout: <span id="workout">-</span></p>
+      <p>Calories Burned: <span id="calories">0</span> kcal</p>
+    </div>
+
+    <div class="buttons">
+      <button onclick="goToAdd()">Add Activity</button>
+      <button onclick="goToHistory()">View History</button>
+    </div>
+
+    <div class="chart-container">
+      <h3>Weekly Progress</h3>
+      <canvas id="weeklyChart" width="400" height="200"></canvas>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
